@@ -1,0 +1,36 @@
+:root {
+  --bg:#f2f2f7; --sf:#fff; --sf2:#f2f2f7; --sf3:#e5e5ea;
+  --bd:rgba(0,0,0,.07); --bd2:rgba(0,0,0,.13);
+  --t1:#1c1c1e; --t2:#636366; --t3:#aeaeb2;
+  --ac:#0071e3; --ac2:#34aadc; --glow:rgba(0,113,227,.18);
+  --gr:#34c759; --gr-bg:rgba(52,199,89,.10);
+  --am:#ff9f0a; --am-bg:rgba(255,159,10,.10);
+  --rd:#ff3b30; --rd-bg:rgba(255,59,48,.10);
+  --sh1:0 1px 3px rgba(0,0,0,.05),0 4px 16px rgba(0,0,0,.07);
+  --sh2:0 2px 8px rgba(0,0,0,.08),0 16px 48px rgba(0,0,0,.10);
+  --r1:10px;--r2:16px;--r3:22px;--r4:32px;
+  --header-bg:rgba(242,242,247,.88);
+  --font:-apple-system,"SF Pro Display",BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"SF Mono","Fira Code",ui-monospace,monospace;
+}
+[data-theme="dark"]{
+  --bg:#000;--sf:#1c1c1e;--sf2:#2c2c2e;--sf3:#3a3a3c;
+  --bd:rgba(255,255,255,.08);--bd2:rgba(255,255,255,.14);
+  --t1:#f5f5f7;--t2:#98989d;--t3:#48484a;
+  --ac:#0a84ff;--ac2:#5ac8fa;--glow:rgba(10,132,255,.22);
+  --gr:#30d158;--gr-bg:rgba(48,209,88,.12);
+  --am:#ff9f0a;--am-bg:rgba(255,159,10,.12);
+  --rd:#ff453a;--rd-bg:rgba(255,69,58,.12);
+  --header-bg:rgba(0,0,0,.88);
+  --sh1:0 1px 3px rgba(0,0,0,.35),0 4px 16px rgba(0,0,0,.30);
+  --sh2:0 2px 8px rgba(0,0,0,.45),0 16px 48px rgba(0,0,0,.40);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{font-family:var(--font);background:var(--bg);color:var(--t1);min-height:100vh;transition:background .3s,color .3s;line-height:1.5}
+button,input{font-family:inherit;border:none;outline:none}
+img{display:block;max-width:100%}
+::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:99px}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.up{animation:up .4s cubic-bezier(.22,.8,.36,1) both}
